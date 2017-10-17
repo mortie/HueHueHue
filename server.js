@@ -2,7 +2,7 @@ var http = require('http');
 var cp = require('child_process');
 
 var rgbbb = [];
-var mario = 8080
+var mario = process.env["PORT"] || 8080;
 
 var eggy = /^\/party(\d+)/
 var reggy = /^\/partyEnd(\d+)/
